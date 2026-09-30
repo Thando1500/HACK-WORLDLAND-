@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050806">
+<meta name="description" content="HACK WORLDLAND — VPN HACK">
+<title>HACK WORLDLAND 🌍 — VPN HACK</title>
+<style>
+:root{--bg:#050806;--panel:#0a110d;--panel2:#0d1711;--line:#193d29;--green:#25ff88;--green2:#9dffc6;--muted:#8fa497;--text:#effff4;--danger:#ff6b6b;--shadow:0 18px 60px rgba(0,0,0,.45)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% -10%,rgba(37,255,136,.13),transparent 35%),var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}
+#intro{position:fixed;inset:0;z-index:9999;background:#020403;display:grid;place-items:center;transition:opacity .7s,visibility .7s}
+#intro.hide{opacity:0;visibility:hidden;pointer-events:none}
+.matrix{position:absolute;inset:0;overflow:hidden;opacity:.17;background:repeating-linear-gradient(90deg,transparent 0 28px,rgba(37,255,136,.06) 29px 30px),repeating-linear-gradient(0deg,transparent 0 28px,rgba(37,255,136,.04) 29px 30px)}
+.matrix:after{content:"01010110  VPN HACK  101001  HACK WORLDLAND  01101  🌍";position:absolute;inset:-20%;font-size:17px;line-height:2.5;letter-spacing:6px;color:var(--green);transform:rotate(-12deg);word-spacing:20px}
+.introbox{position:relative;text-align:center;padding:34px 24px;width:min(720px,92vw)}
+.introglobe{font-size:64px;filter:drop-shadow(0 0 20px rgba(37,255,136,.55));animation:pulse 1.5s infinite}
+.introtitle{margin:8px 0;color:var(--green);font-size:clamp(38px,11vw,82px);letter-spacing:3px;text-shadow:0 0 22px rgba(37,255,136,.45)}
+.introcreator{letter-spacing:7px;color:#fff;font-weight:800}
+.loader{height:5px;background:#122017;border-radius:99px;overflow:hidden;margin:28px auto 0;max-width:360px}.loader i{display:block;height:100%;width:0;background:var(--green);box-shadow:0 0 15px var(--green);animation:load 1.8s forwards}
+@keyframes load{to{width:100%}}@keyframes pulse{50%{transform:scale(1.08);opacity:.8}}
+header{position:sticky;top:0;z-index:100;background:rgba(5,8,6,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px}
+.brand{font-weight:900;letter-spacing:1px;color:var(--green)}.brand span{color:#fff}
+.navright{display:flex;gap:8px;align-items:center}.navright select,.navbtn{background:#0a120d;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:9px 11px}.navbtn{cursor:pointer}
+main{max-width:1180px;margin:auto;padding:0 18px 60px}
+.hero{padding:70px 0 40px;display:grid;grid-template-columns:1.25fr .75fr;gap:25px;align-items:center}
+.kicker{display:inline-block;border:1px solid #235a3b;color:var(--green2);padding:7px 10px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:1.5px}
+.hero h1{font-size:clamp(42px,8vw,82px);line-height:.95;margin:16px 0;color:#fff}.hero h1 em{color:var(--green);font-style:normal;text-shadow:0 0 25px rgba(37,255,136,.22)}
+.hero p{max-width:690px;color:var(--muted);font-size:17px;line-height:1.7}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.primary,.secondary{border-radius:12px;padding:13px 16px;border:1px solid var(--line);cursor:pointer;font-weight:800}.primary{background:var(--green);color:#031008}.secondary{background:#0a120d;color:#dfffea}
+.terminal{border:1px solid var(--line);background:linear-gradient(145deg,#0b140e,#060a07);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+.termbar{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12px}.dots{display:inline-flex;gap:5px;margin-right:8px}.dots i{width:7px;height:7px;border-radius:50%;background:#355440}
+.termtext{padding:22px;font-family:monospace;color:var(--green2);line-height:1.8;font-size:13px;min-height:260px}.cursor{animation:blink 1s infinite}@keyframes blink{50%{opacity:0}}
+.section{padding:42px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:18px}.section h2{font-size:28px;margin:0}.section p{color:var(--muted)}
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0}.filter,.search{background:#09110c;color:#dfffea;border:1px solid var(--line);border-radius:11px;padding:10px 12px}.filter{cursor:pointer}.filter.active{border-color:var(--green);color:var(--green);box-shadow:0 0 0 1px rgba(37,255,136,.1)}
+.search{width:min(380px,100%)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:linear-gradient(145deg,#0a120d,#080d09);border:1px solid var(--line);border-radius:17px;padding:17px;box-shadow:0 10px 35px rgba(0,0,0,.2)}.card:hover{border-color:#287748;transform:translateY(-2px)}.card{transition:.2s}
+.badge{display:inline-block;font-size:11px;color:var(--green);border:1px solid #225a39;border-radius:999px;padding:4px 7px;margin-bottom:10px}.card h3{font-size:16px;margin:4px 0 8px;line-height:1.35}.card small{display:block;color:#71877a;min-height:32px}.download{display:block;text-align:center;margin-top:15px;background:var(--green);color:#031008;padding:11px;border-radius:10px;font-weight:900;cursor:pointer;border:0;width:100%}
+.empty{display:none;border:1px dashed var(--line);border-radius:14px;padding:24px;color:var(--muted);text-align:center}.empty.show{display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:#09110c;border:1px solid var(--line);border-radius:18px;padding:20px}.panel h3{margin-top:0}.panel p,.panel li{color:var(--muted);line-height:1.6}
+.formgrid{display:grid;gap:10px}.field{width:100%;background:#050a07;border:1px solid var(--line);color:#fff;border-radius:10px;padding:12px}.drop{border:1px dashed #2c7049;padding:22px;border-radius:13px;text-align:center;color:var(--muted)}.drop input{margin-top:10px}
+.aiwindow{height:300px;overflow:auto;background:#050906;border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:10px}.msg{max-width:88%;padding:10px 12px;border-radius:12px;margin:8px 0;line-height:1.5;font-size:14px}.bot{background:#0c1b12;border:1px solid #194b2e}.user{margin-left:auto;background:#173524;color:#dffff0}.aiform{display:flex;gap:8px}.aiform input{flex:1}
+.notice{border-left:3px solid var(--green);padding:10px 13px;background:#08110b;color:var(--muted);line-height:1.6;border-radius:0 10px 10px 0}
+footer{border-top:1px solid var(--line);padding:25px 18px;color:#6f8176;text-align:center;font-size:13px}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:45px}.grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.terminal{order:-1}}
+@media(max-width:560px){.nav{padding:11px 12px}.brand{font-size:13px}.navright select{max-width:105px}.hero h1{font-size:48px}.grid{grid-template-columns:1fr}.section{padding:30px 0}.hero{padding-bottom:20px}}
+</style>
+</head>
+<body>
+<div id="intro">
+  <div class="matrix"></div>
+  <div class="introbox">
+    <div class="introglobe">🌍</div>
+    <div class="introtitle">VPN HACK</div>
+    <div class="introcreator">HACK WORLDLAND</div>
+    <div class="loader"><i></i></div>
+  </div>
+</div>
+
+<header>
+  <nav class="nav">
+    <a class="brand" href="#home">HACK <span>WORLDLAND</span> 🌍</a>
+    <div class="navright">
+      <select id="language" aria-label="Language">
+        <option value="en">English</option><option value="pt">Português</option>
+        <option value="zu">isiZulu</option><option value="fr">Français</option><option value="es">Español</option>
+      </select>
+      <a class="navbtn" href="#ai">AI</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <span class="kicker" data-i18n="kicker">VPN RESOURCES • WORLDWIDE</span>
+    <h1>HACK<br><em>WORLDLAND</em> 🌍</h1>
+    <p data-i18n="hero">A clean hub for VPN configuration resources, community uploads and a built-in VPN HACK AI helper.</p>
+    <div class="actions">
+      <a class="primary" href="#resources" data-i18n="browse">Browse resources</a>
+      <a class="secondary" href="#publish" data-i18n="publishBtn">Share your file</a>
+    </div>
+  </div>
+  <div class="terminal">
+    <div class="termbar"><span class="dots"><i></i><i></i><i></i></span> vpn-hack@worldland</div>
+    <div class="termtext">
+      &gt; boot HACK_WORLDLAND<br>
+      &gt; loading resource index... <b>OK</b><br>
+      &gt; interface... <b>OK</b><br>
+      &gt; language packs... <b>5</b><br>
+      &gt; resources embedded... <b id="termCount">0</b><br>
+      &gt; status: <b>ONLINE</b><br><br>
+      <span>&gt; ready<span class="cursor">_</span></span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="resources">
+  <div class="sectionhead"><div><h2 data-i18n="resources">VPN Resources</h2><p data-i18n="resourceSub">Choose a country or search the resource list.</p></div></div>
+  <div class="filters" id="filters">
+    <button class="filter active" data-country="all">🌍 All</button>
+    <button class="filter" data-country="South Africa">🇿🇦 South Africa</button>
+    <button class="filter" data-country="Pakistan">🇵🇰 Pakistan</button>
+    <button class="filter" data-country="Zimbabwe">🇿🇼 Zimbabwe</button>
+    <button class="filter" data-country="Ghana">🇬🇭 Ghana</button>
+    <button class="filter" data-country="Mozambique">🇲🇿 Mozambique</button>
+    <button class="filter" data-country="Angola">🇦🇴 Angola</button>
+    <input class="search" id="search" placeholder="Search files..." aria-label="Search files">
+  </div>
+  <div class="grid" id="resourceGrid"></div>
+  <div class="empty" id="empty">No resources match your search.</div>
+  <div class="notice" style="margin-top:16px">Use configuration files only on networks and services you are authorized to use. Availability and compatibility can change by carrier, device and location.</div>
+</section>
+
+<section class="section" id="publish">
+  <div class="sectionhead"><div><h2 data-i18n="publish">Share Your File</h2><p data-i18n="publishSub">Add a file to the page for this browser session.</p></div></div>
+  <div class="two">
+    <div class="panel">
+      <h3>Publish a resource</h3>
+      <div class="formgrid">
+        <input class="field" id="pubName" placeholder="File/resource name">
+        <select class="field" id="pubCountry">
+          <option>South Africa</option><option>Pakistan</option><option>Zimbabwe</option><option>Ghana</option><option>Mozambique</option><option>Angola</option><option>Other</option>
+        </select>
+        <div class="drop">
+          Select a configuration file
+          <input type="file" id="pubFile">
+        </div>
+        <button class="primary" id="publishFile">Add resource</button>
+        <div id="pubStatus" style="color:var(--muted)"></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>About HACK WORLDLAND</h3>
+      <ul>
+        <li>English is the default language.</li>
+        <li>Five language options are included.</li>
+        <li>Country filters help organize resources.</li>
+        <li>Uploaded resources are kept locally in the current browser session unless a real backend is added later.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ai">
+  <div class="sectionhead"><div><h2>🤖 VPN HACK AI</h2><p>Built-in helper for navigating this website.</p></div></div>
+  <div class="panel">
+    <div class="aiwindow" id="aiWindow">
+      <div class="msg bot">VPN HACK AI online. Ask me about resources, countries, downloads, or how this website works.</div>
+    </div>
+    <form class="aiform" id="aiForm">
+      <input class="field" id="aiInput" placeholder="Ask VPN HACK AI..." autocomplete="off">
+      <button class="primary">Send</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>HACK WORLDLAND 🌍 • Created by VPN HACK</footer>
+
+<script>
+const embeddedFiles = [{"name":"VODACOM 700MB LIMPOPO ❤️👊.bdnet","data":"NGYwNzM2MTYzMTA2MDY1YTBhMTIwZjMzNTU0ODM1NDY2MjQxM2U3MTIyMmExMzEyNzkwNTY3NTQ2ODJlMmExZTJhMjIxZDBkN2I3NTFmNDRiYWZlY2NkMWRlZTRhMGMyYTVhZjcyNDg3YTEzMDk0NzBhMDQzMTM5MTYxZjcyNDY3NDQxMWI1ZjEzMTgzMTNhNTEwNzZhNDY2ZDA3NWM1YzU0NTg2MTZkMDY0NDYxNTI2ODAxNWM1ZjU3NTg2MTY0MDcxMDY3NTQ2YzUyNWQwYjU1MDg2MDNmMDcxYzYwNTM2OTAxNTkwZTU3NWU2NTY1MDM0MDYzMDc2ZDVhNWMwYTU0MGE2MDNmMDcxMzYwNTY2OTA1NWM1YTUyNTM2MDY1MDc0MzYzNTQ3YTRmNGE1NjA5MTgyNDdmMGUwNzcyNDg3YTEzMDc0YzEyNDk2YTdmMTYwOTcyMDAzNzE3MDA1MTE1MWY3MjY3MTYwNzdjNDYzNTA2MWI0ZDA3MGMzNTdmMGUwNzEzMTEyYjE3MDc1MzQ2M2YyNzM4NTU0ZTcwNDk3ODAwMWE1YjA3MWYzNTM5MTQ0NzI5NWViMmM5ZjRjZWZiZjJlZmFkYTliY2VkNDRhOGZlZjE4OTk2ZjZjOWVkYzRiOGM5ZDZhOGZlZjE4NDQ0NDc3MjMwNTE1MTM4MGIzYzQxNTIxYzE1MTgzYzdmMTgwNzIzMTczNDE0MWIxYzVjNDkzNjNjNTg1NjM1NDY3NDQxMTk0YjAzMTkyOTdmMGUwNzNlMGIyYTBlMDk1MjQ0NDc3MjNlNTU1MTM1MDMzNzExMTExYzVjNDkzZjNlNDc0ZTIwMGEzNzExMDU1ZjBhNDk3YzdmNWQ1NjE4MGIyYjE3M2E1YjE1MDQzYzJiNTEwNzZhNDYyYzExMWQ1YjQ0NDc3MjM0NDc2ZDNmMTcyYzMwMDY1NzQ0NTE3MjNiNTU0OTIzMDE3YTRmNGE1NzE1MmEyNTI5NWI3NjM1MDgzZDAwMWMxYzVjNDkyNDJmNDE0MDcyNDg3YTAyMDQ1MjA5MWMxOTMzNDc0MDMzMTEyYTA2NGEwNDQ0MWYyMjI4NTEwNzdjNDYyYzBmMWI2ODAzMTkyMzM0NWI0YjcyNWU3YTUwNGExMjQ0MDIyMzBkNDY0YTI4MWQwODExMDc0YTAzMDgyNDM4NTAwNzZhNDYzZTAyMDQ0ZDAzNDk3YzdmNDY0MDMzMGIzNjBkMGQ1ZDEyMzgzNTNlNWI0YjM0MTc3YTU5NGEwYjQ0NDc3MjI5NDM0MDMxMGYwNzA2MTA0ZTBmMTkyOTdmMGUwNzYyNTQ2YTU1NDUwNzRiNTk2OTcwMDUxNTdkNTE2YjQxNDQxYzBlMWMzOTM5NmI0OTNmMDczMzQxNTIxYzQ0NDc3MjMwNWI0NzM5MDgzZDNjMGM1ZjEyMGEwZjMyNWE0OTI5NDY2MjQxMWM0YzEzMGU3MjcxMTY0NzNjMGIzYjA4Mzc0YzA5MDQyNDM4NTAwNzZhNDYyYzExMWQ1YjQ0NDc3MjI5NDM0MDMxMGYwNzEzMDk0ZDE1MWMzZjJmNTAwNzZhNDY3YTFl"},{"name":"VODACOM ILIMITADO 😅.bdnet","data":"NGYwNzM2MTYzMTA2MDY1YTBhMTIwZjMzNTU0ODM1NDY2MjQxM2U3MTIyMmExMzEyNzkwNTE5MjgxMTJlMjE2YTI3MmYxZjdkYzRiYWM4ZTE3YTRmNGE0ZTA3MTIzYzMyNTU0MTcyNWU3YTU0NWIwODU2NWI2NDY5MDAxMjY3NTA2YjUxNTgwODA3NTg2MjZlNTYxMjM2NTIzYjUyMDkwZjUyNWIzMjZkMDMxNzMxNTQzZTUzMGQwODU1NTkzNTZkMDAxNzYzNTY2MTUzMGQwZTUzNWIzMjZkMDMxNjM1NTczZDUwNWIwYjAyNWE2NDZkMDMxNjY2NTQ2ODU1NTkwYjUwNTg2NTZjMDIxMjY1NTY2YTUzMGUwYjA0NWI2ODZjNTIxMzMxNTMzYzU1MGUwYjU2NTg2MTZlMGQxNTYzNTQ2ODUyMDkwYjU0NWI2MDZlMDIxNDYzNTc2YTU2MDkwYTA0NTg2NTZkMDMxNzMzNTQzOTUzNWYwYjU2NWUzMzY5NTYxNTY1NTYzYzU2NWIwYjUxNTg2MTZkMDQxNjM0NTc2MDUzMGEwYTA1NWIzMTZkNTAxNTM0NTQ2MDU3NWMwYTU0NTk2MjZkMDExNjMzNTQ2ZTU2NWEwZjAzNWE2MTZkNTExNjYyNTYzZDU2MGEwYTUwNTgzMjZkMDUxNzMzNTc2MDUzMGEwYTA1NWIzMTZkNTAxNTM0NTQ2ZTU2NWYwYjUxNTgzMzZkMDYxNTY1NDY3NDQxMWI1ZjEzMTgzMTNhNTEwNzZhNDY3YTRmNGE1NjA5MTgyNDdmMGUwNzY0NTc2ZDUxNWEwOTUyMGE2MzY4MDU0NDYwNTE2YzAxNTk1ZDU2MGU2NzM4MDc0MDY1MDY2ODAxNWI1YTU3MGU3MjcxMTY1NTNmMTYyYzQxNTIxYzUyNWY2MzdmMTgwNzM5MTcwODExMDc0NjFmM2IyMjMyNDA0MDMzMTAzZDA3NGEwNDQ0MWYyMjI4NTEwNzdjNDYzYzBjMWM1NjA5MTgyNDdmMGUwNzcyNDg3YTBlMGQ0ZDE1MGEzNzM4MTYxZjcyMjcyZDEwMWM1MTBiNGIwNDJhNTE0NDNiNDQ3NTQzMjk3MDI5MjUwOTEwN2I3MDAzNDQ3YTRmNGE1MzAzMWYzODMyNTAwNzZhNDYzMDE3MWM0ZTQ0NDc3MjJlNDc0OTI3MTc3YTU5NGE1ODA3MDcyMzM4MTYwOTcyMTUyZDA2MWE0NzQ0NTE3MjMzNWI1NzNkMDUzNDQxNDQxYzA1MGEyNDM4NTM0YTIyMWQ3YTU5NGE1MTA1MTgzYjJkMTYwOTcyMGQyYjJiMDc0ZDEyMzkzNTJlNWI0OTI2MDE3YTU5NGE1ODA3MDcyMzM4MTYwOTcyMGQyYjJiMDc0ZDEyMzgzZTM0MTYxZjcyMDIzOTBmMWI1YjQ0NDc3MjM0NDc2NDI1MTAzNzMwMGQ1MjAzMDgyNDdmMGUwNzI0MTYyZDA2NGExMjQ0MGEzYzMxNWI1MjE5MGEyYjA2MGI0YjE0MGU3MjY3MTY0MzMxMDgyYjA2NGExMjQ0MWYzYzJlNjI0MDIyMTczMTBjMDYxYzVjNDk2MzdmMTgwNzIyMDEzYjBjMDY1MDAzMDgyNDBlNTE0NjNmMGEzYzEwNGEwNDQ0NWU3MjcxMTY1MTI3MDEzOTA4Mzc1YjFlMWIzOTJmNGQwNzZhNDY3YTRmNGE1NjExMDIzNDAyNTg0YTMzMGY3YTU5NGExYzRhNDkzZDMyNTY0YzNjMDEwNzA3MDk0YTA3MzQzZjMzNTg1YzcyNWU3YTA1MDk1MjE1MGU3MjcxMTY0NzNjMGIzYjA4Mzc0YzA5MDQyNDM4NTAwNzZhNDYzZTAyMDQ0ZDAzNDk3YzdmNDA1MjM1MDUzMzNjMTg1ZjE1MTgyNzMyNDY0MTcyNWU3YTQxMTU="},{"name":"YOUTUBE BYPASS 👊❤️.bdnet","data":"NGYwNzM2MTYzMTA2MDY1YTBhMTIwZjMzNTU0ODM1NDY2MjQxMzE3MTMzM2YwNTFmNzEwNTEyM2QwODIyM2I2ZDQ2OWJjZmNjYmVjN2NkYzBiN2RiZTcxYzRhNDkyMDNjNGQ0OTNmMDUzYzQxNTIxYzQ0NDc3MjJlNTU1MDIzMDUzZjA2NGEwNDQ0NWY2MzY4MDYxNzY3NTAzOTUxNTkwZTA1NWEzNDY5NTUxNDYzNTQ2MTUwNWQwOTU1NWU2NzY5NTUxNjM0NDY3NDQxMDA1MTE1MWY3MjY3MTYwNzdjNDYyODBjMWE0YTQ0NTE3MjdmMTgwNzM0MGIyYzBiMDc0ZDEyNDk2YTdmMTYwOTcyMDkzZDEwMWI1ZjAxMGU3MjY3MTY2NjI1MTcyYzBjMDUxZTMyMWMzNTNjNWYwNTdkNDQzYjExMGQ1ZjEyMGUzNDdkNTY1YzZhNDRiMmM5ZjRjZWZiZjJlZmFkYTliY2VkNDRhOGZlZjE4OTk2ZjZjOWVkYzRiOGM5ZDZhOGZlZjE4NDQ0NDc3MjMwNTE1MTM4MGIzYzQxNTIxYzE1MTgzYzdmMTgwNzIzMTczNDE0MWIxYzVjNDkzNjNjNTg1NjM1NDY3NDQxMTk0YjAzMTkyOTdmMGUwNzNlMGIyYTBlMDk1MjQ0NDc3MjNlNTU1MTM1MDMzNzExMTExYzVjNDkzZjNlNDc0ZTIwMGEzNzExMDU1ZjBhNDk3YzdmNWQ1NjE4MGIyYjE3M2E1YjE1MDQzYzJiNTEwNzZhNDYyYzExMWQ1YjQ0NDc3MjM0NDc2ZDNmMTcyYzMwMDY1NzQ0NTE3MjNiNTU0OTIzMDE3YTRmNGE1NzE1MmEyNTI5NWI3NjM1MDgzZDAwMWMxYzVjNDkyNDJmNDE0MDcyNDg3YTAyMDQ1MjA5MWMxOTMzNDc0MDMzMTEyYTA2NGEwNDQ0MWYyMjI4NTEwNzdjNDYyYzBmMWI2ODAzMTkyMzM0NWI0YjcyNWU3YTUwNGExMjQ0MDIyMzBkNDY0YTI4MWQwODExMDc0YTAzMDgyNDM4NTAwNzZhNDYzZTAyMDQ0ZDAzNDk3YzdmNDY0MDMzMGIzNjBkMGQ1ZDEyMzgzNTNlNWI0YjM0MTc3YTU5NGEwYjQ0NDc3MjI5NDM0MDMxMGYwNzA2MTA0ZTBmMTkyOTdmMGUwNzYyNTQ2YTU1NDUwZjU2NDY2MTZjMTkxNDYyNDk2YjQxNDQxYzBlMWMzOTM5NmI0OTNmMDczMzQxNTIxYzQ0NDc3MjMwNWI0NzM5MDgzZDNjMGM1ZjEyMGEwZjMyNWE0OTI5NDY2MjQxMWM0YzEzMGU3MjcxMTY0NzNjMGIzYjA4Mzc0YzA5MDQyNDM4NTAwNzZhNDYyYzExMWQ1YjQ0NDc3MjI5NDM0MDMxMGYwNzEzMDk0ZDE1MWMzZjJmNTAwNzZhNDY3YTFl"},{"name":"ⒻⓇⒺⒺⓃⒺⓉ ⓂⓉⓃ 🇦🇱.bdnet","data":"NGYwNzM2MTYzMTA2MDY1YTBhMTIwZjMzNTU0ODM1NDY2MjQxOGFhY2RkODljM2RhZDZiN2VhODZjYWQ5OGFhZGU1ODljMmU3ZDZiNmQ5NDRiYWYwZWFkY2Y1ZTJiMmNlYjcwNWEwZmJkZmM1OThhMWUxZGE3MjcxMTY1NTMxMWQzNDBjMDk1YTQ0NTE3MjZhMDcxMzYwNTQ2YzU3NWMwYzAwNWE2MDZjNTYxNTY0NTA2MTU3NWMwZTA0NTgzNTY4MDYxMjY4NTM2ODUxMGIwZTA1NTg2NzZlMGMxNDYxNTE2ZjU3NWQwODU3NWI2NjY4MDMxMDY3NTczYjUzNWEwZTUzNTkzMjZkMDMxMTM0NTU2YTU2NTkwOTU2NWEzNjZiMDUxMzYyNTU2MDUxMGEwZTA0NTg2NzZlMDcxMDM0NTU2YzUzNWYwZDUwNWI2MDZiMDUxMDY2NTc2ZDUyNWUwOTUzNTk2MjZkNTIxMDMyNTQ2MDUyMGUwODA3NWMzNDZiNTIxMDYwNTc2OTUwNTEwZTU1NWI2MDZjNTUxMDYyNTQ2ODUwNWUwZjU1NTg2MjY4NTUxMTMyNTc2ZDUzNWYwYzA1NWIzMTZkMDMxMDYwNTEzYjU3MGEwZTUzNTkzNDY4MDcxMDY3NTc2OTUzNTgwZDAyNTg2ODZkNTYxMTMzNTQzOTUzMGMwZTAyNWI2ODY5MDAxMTYyNTY2YTUzNWQwZDA1NWI2NjY4MDYxNDM1NTU2OTUzMGQwZDU0NTkzNTY4NTYxMTY2NTczYTUzNTkwYzA1NTg2ODZkNTYxMTMzNTQzOTUzMGMwZTAyNWI2NjY4MDMxMDY3NTczYjUzNWEwZTUzNDk3YzdmNDc0NDI1MTczOTA0MGQxYzVjNDk3MjcxMTY0ZDNmMTcyYzQxNTIxYzUzNWU2NTZhMDcxMDYwMDU2YjVhNTkwZDU2NWY2NDNmMDUxMDY0NTE2YjUwNWIwYzU3MGE2NTNiMDcxNDcyNDg3YTEzMDc0YzEyNDk2YTdmMGMxNTcyNDg3YTBhMWI2ZTE0MDQyODI0NjQ1NzNmMTAzZDAwMWM1YjAyNDk2YTdmNDA1NzI1MDE3YTRmNGE1YTA5MWYzODMyNDc1MTcyNWU3YTQxNDQxYzBiMGUyMzJlNTU0MjM1NDY2MjQxMmI0YjE1MWYzZjMwMTQ3MTI3MDEzOTA4NDgxMzQ2OWJjZGNkYjZkNWNkZjRjOTkzZjVhZWUyOWJjZGNkYjRkNWNkZjRjYjkzZjVhZWU4OWJjZGNkYTUxZjcwOTRjNWYzZmRjZWZiZmJkZmFkYTliNWRkNDRhOGZlZjhiOTk2ZjZjMGRkYzRiOGMwZTZhOGZlZjhiNDQ0NDc3MjMwNTE1MTM4MGIzYzQxNTIxYzBlMWYyNDJkMTYwOTcyMTcyYjBmMWY0ZDQ0NTE3MjNiNTU0OTIzMDE3YTRmNGE0ZjEzMGUyMjI0MTYxZjcyMGEzNzExMDU1ZjBhNDk3YzdmNTc0NDI0MDEzZjBjMWE0NzQ0NTE3MjMyNTc1NjNiMTQ3YTRmNGE1NzE1MjMzZjJlNDA3NzM1MTczNzBmMWU1YjQ0NTE3MjNiNTU0OTIzMDE3YTRmNGE1NzE1MjMzZjJlNDA3NjNlMGQ3YTU5NGE1ODA3MDcyMzM4MTYwOTcyMGQyYjIyMWQ0YTA5MzgzNTMxNTE0NjI0NDY2MjQxMWM0YzEzMGU3MjcxMTY0NDNjMDgzNzE0MjE1MDE1MGUzMzI4NDY0MDcyNWU3YTA1MDk1MjE1MGU3MjcxMTY1MTNjMTcwZTA2MWE0ZDBmMDQzZTdmMGUwNzYzNDY3NDQxMWE1YjA1MDQzZTMzNTE0NjI0MzczZDAwMDc1MDAyMTg3MjY3MTYxMDcyNDg3YTE3MWY1YjA3MDAwZjM4NGM1NTM5MTYyMTQxNTIxYzU0NWI2MjZiMTkxYzdkNTc2ODRlNWYxMzU0NTI3MjcxMTY0ZDI3MGQzYzNjMDQ1MTA1MDA3MjY3MTYwNzdjNDYzNTBjMGE1NzBhMGUwZjM5NTU1MTMxM2IzNzBkMDQ0NzQ0NTE3MjI5NDY1MDM1NDY3NDQxMGE1MjA5MDgzYjAyNDY0YTNmMTAzZDA3NGEwNDQ0MWYyMjI4NTEwNzdjNDYyYzE0MGQ1ZjBkMzQyMDNjNDc1NjI3MGIyYTA3NGEwNDQ0NDkyZA=="},{"name":"⫷⚡𝐌𝐓𝐍 𝟑𝟎𝟎𝐌𝐁 𝐏𝐑𝐎⚡⫸.bdnet","data":"NGYwNzM2MTYzMTA2MDY1YTBhMTIwZjMzNTU0ODM1NDY2MjQxOGE5NWQxODljYWZjYzRiOGMwZThhOGZlZjhhZDk2ZjZjMGQwMTRkNWNkZmJjOTkzZjVhMWU4OWJjZGMyYmFkNWNkZjRkNDkzZjVhZWU3NGJhMGMwYTRhYWEwZjljOGYyOThhM2Y2ZTViMmM3OTVjN2ZiZGM3YTRmNGE0ZTA3MTIzYzMyNTU0MTcyNWU3YTU0NWIwODU2NWI2NDY5MDAxMjY3NTQ2ODUzMGIwYjU2NWYzMjZkMGMxNjY3NTc2YzUyMGEwYjU3NTk2MjZkMDExNjMyNTQ2ZTU3NTAwOTUwNTg2MjZlNTIxNTYwNTM2YTUzNWQwZTA0NWQ2MTZlNTIxNjMyNTU2OTUzNWMwYjVlNTgzMjZmMDcxNjM2NTYzZDU3NTgwZjAwNWM2MDZlNTIxNzY4NTU2OTUzNWYwYTUwNWEzNjZlMDIxNTMyNTczZDU3NWUwYTVmNTg2NjZlMGQxNTYzNTQ2ODUyMDkwYjU0NWI2MDZlMDIxNDYxNTUzZDU0NTAwZTUzNWMzNjY5MDAxNDYwNTc2ZjUwMGIwODAzNWY2OTY4NTUxMjM1NTIzYjU1MGUwYTUwNTk2MjZkMGMxNjM1NTczZDUxNTgwYjU3NWE2NTZjNTIxMzMxNTMzYzU1MGUwYTUwNTg2NjZlMGQxNTYzNTQ2ODUyMDkwYjU0NWI2MDZlMDIxNTY1NTYzZDU2NTkwYjUxNWMzNDZmMDExNjM2NTQ2ZTUzNWUwYTA3NWUzMzY5NTYxNTMyNTY2MDU2NWQwOTVlNWIzMjZkMDMxNzMxNTQzZTUzMGQwODU1NTk2NTZkMDAxNjM1NTc2YjU2NTkwYTUwNTk2NDZkNTAxNjY3NTQzYzU2NWEwZjAzNTg2MzZjNTYxNjY3NTYzZTU2NWQwYTU3NTg2NTZlNTIxNjMyNTU2OTUzNWMwYjVlNTgzMjZlNTExNzYwNTczOTU3NWUwYTUyNTg2NDZkMDUxMzYyNTA2YjUyMGUwYjA0NWI2NDZjMGMxNjM2NTczZDU2MGUwYTU2NTk2NDZlNTIxNjMyNTU2OTUzNWMwYjVlNTgzMjZlMDQxNjYzNTYzZTU2NTAwYTU1NWIzNDdmMTgwNzIzMDUyZDEwMDk1OTAzNDk2YTdmMTYwOTcyMGMzNzEwMWMxYzVjNDk2NTY0MDExNDYzMDE2ODU2NWE1ZjU2NWQ2MDZiMDE0MzY0NWM2ODViNWI1ODUxNTg2NDM4MDAxMTcyNDg3YTEzMDc0YzEyNDk2YTdmMGMxNTcyNDg3YTBhMWI2ZTE0MDQyODI0NjQ1NzNmMTAzZDAwMWM1YjAyNDk2YTdmNDA1NzI1MDE3YTRmNGE1YTA5MWYzODMyNDc1MTcyNWU3YTQxNDQxYzBiMGUyMzJlNTU0MjM1NDY2MjQxMmI0YjE1MWYzZjMwMTQ3MTI3MDEzOTA4NDgxMzQ2MjgwMjE4NzU3MTE1MjA3ODIxMzEwNDQ2OWJjZGNkYTFkNWNkZjRkNzkzZjVhZWViNGJhMGMwYTRhMmEwZjljOGUzOThhM2Y2ZTlhMGMwYTRhZjBjMGFhOGYwZWU5Nzk2ZjRjMmRkYzRiNmQ2Y2U3ODQxNDQxYzBiMGUyNDM1NWI0MTcyNWU3YTBiMWM0YTE2NDk3YzdmNDc1NjNjMTMyYjQxNTIxYzAwMGEzYzJlNTEwNzdjNDYyOTE2MGQ0YzFmNDk2YTdmNWE0YTIyMDkzOTBmNGExMjQ0MDgzMTI5NTE0MjNmMTYyMTQxNTIxYzA5MDgyMzM2NDQwNzdjNDYzMTEwMjA1MTE1MWYwMjM4NDc0YTNjMTIzZDQxNTIxYzAwMGEzYzJlNTEwNzdjNDYzMTEwMjA1MTE1MWYwMzMzNWQwNzZhNDYzZTAyMDQ0ZDAzNDk3YzdmNWQ1NjExMTEyYzBjM2I1YjBhMGUzMzI5MTYxZjcyMTAyYTE2MGQxYzRhNDkzMTMxNTg0YTI3MmQzNjEwMGQ1ZDEzMTkzNTdmMGUwNzM2MDUzNDEwMGQxYzRhNDkyNDMxNDc3MzM1MTYyYjBhMDc1MDQ0NTE3MjZlMTYwOTcyMTYzZDAwMDc1MDA4MGUzMzI5Njc0MDMzMGIzNjA3MWIxYzVjNDk2NTdmMTgwNzI0MTMzZDAyMDM2MTAzMTMyMDM0NDY1YzcyNWU3YTUxNTgwYzUwNDY2MTZkMTkxMTdkNTU2YjRlNWMwYjQ0NDc3MjM1NDM0YzM0M2IzNDBjMGI1NTQ0NTE3MjdmMTgwNzNkMGIzYTBhMDQ1YjM5MGYzMTI5NTU3YTNmMGEzNDFhNGEwNDQ0MWYyMjI4NTEwNzdjNDYzYTBmMDc1ZDBkMzQyMjMyNWI1MTM1MDA3YTU5NGE0YTE0MWUzNTdmMTgwNzI0MTMzZDAyMDM2MTE2MGEyMzJlNDM0YTIyMDA3YTU5NGExYzFi"},{"name":"𓃵 𝗩𝗢𝗗𝗔𝗖𝗢𝗠 𝟯𝟬𝗚  𓃵.bdnet","data":"NGYwNzM2MTYzMTA2MDY1YTBhMTIwZjMzNTU0ODM1NDY2MjQxOThhZGU1ZGU3MGFkYTliMmY5OTRjNWY0Y2FjZWZiZmNjN2FkYTliMmM0OTRjNWY0ZmVjZWZiZmNmMmFkYTliMmYwNDRhOGZlZjc5MTk2ZjZjZmYxYzRiOGM3ZmU3ODQzOThhZGU1ZGU3MjcxMTY1NTMxMWQzNDBjMDk1YTQ0NTE3MjdmMTgwNzIzMDUyZDEwMDk1OTAzNDk2YTdmMDE0MTY0MDY2YTUwNTkwZTU0MGE2MTZiMDQ0NzY0MDU2OTUwNTkwNzU1NWU2NzZkMDAxNDY1NTE2YjAwNTg1YzU1NTI2MDZhMDU0NzYxNTQ2OTU2NWQwNjUxMGU2MzNlMDExYzY0NTA2YTAyNTg1YzU1NWQ2MDZmMDU0MzY0MDA2YzViNTgwNjU1MGQ2MzZkMTYwOTcyMGMzNzEwMWMxYzVjNDk3MjcxMTY1NTNmMTYyYzQxNTIxYzQ0NDc3MjM5NWI1MTM4MGIyYjE3NGEwNDQ0NDk3YzdmNTk0MDIzMTczOTA0MGQxYzVjNDkxMzI4NDc1MTNmMDk3ODM3MWY1YjA3MDA3MDcwMTQ0NjIyMDEzOTE3MGQ1YTQ2MDkyOTY3MTRjZmZhZjhhOGZlZjE4MTk2ZjZjOWUwMTRkNWNkZmRlZjkzZjVhN2Q2OWJjZGM0ODZkNWNkZmRlMjQxNDQxYzBiMGUyNDM1NWI0MTcyNWU3YTEwMWI1MjQ0NDc3MjJlNDc0OTI3MTc3YTU5NGE1ODA3MDcyMzM4MTYwOTcyMTUyZDA2MWE0NzQ0NTE3MjMzNWI1NzNkMDUzNDQxNDQxYzA1MGEyNDM4NTM0YTIyMWQ3YTU5NGE1MTA1MTgzYjJkNWE0YTIyMDkzOTBmNGExMjQ0MDIyMzE1NWI1NjI0MzYzZDEwMDc1MjEwMGU3MjY3MTY1MTIyMTEzZDQxNDQxYzBmMTgxODMyNDc1MTAzMGEzMTQxNTIxYzAwMGEzYzJlNTEwNzdjNDYzMTEwMjk0YjEyMDQwMzM4NTg0MDMzMTA3YTU5NGE0YTE0MWUzNTdmMTgwNzMxMDgzNDBjMWY3NzA4MTgzNTNlNDE1NzM1NDY2MjQxMWM0YzEzMGU3MjcxMTY1MTNjMTcwZTA2MWE0ZDBmMDQzZTdmMGUwNzYzNDY3NDQxMDE0ZDM2MTkzZjI1NGQ3NTIyMGIyYzA2MGI0YTAzMGY3MjY3MTY0MzMxMDgyYjA2NGExMjQ0MTkzNTNlNWI0YjNlMDEzYjE3M2I1YjA1MDQzZTM5NDcwNzZhNDY2ZDQxNDQxYzEyMWMzNTNjNWY3YTM1MWMyODBhMWE0NzQ0NTE3MjZmMDQxNzY2NDk2MTRlNWIwZTRiNTk2MjcwMDExYzcyNDg3YTBiMWY1NzAyMzQzYzMyNTc0ZTcyNWU3YTQxNDQxYzBiMDQzMjM0NTg0MDBmMDAzOTE3MDk2MTA5MDUzYzI0MTYxZjcyMTAyYTE2MGQxYzRhNDkzMjMxNWI0NjNiM2IyYTBjMDc0YTAzMGY3MjY3MTY1MTIyMTEzZDQxNDQxYzEyMWMzNTNjNWY3YTIwMDUyYjEwMWY1MTE0MGY3MjY3MTYwNzJk"},{"name":"𝐌𝐓𝐍🇦🇱.bdnet","data":"NGYwNzM2MTYzMTA2MDY1YTBhMTIwZjMzNTU0ODM1NDY2MjQxOThhM2Y2ZTdhMGMwYTRiNmEwZjljOGVlOThhMWUxY2RhMGMyYjM5NDcyNDg3YTEzMDk0NzBhMDQzMTM5MTYxZjcyNTM2YjU1NTgwZTUyNWY2NDZhMDMxMTYzNTY2ODU1MDkwZDU0NTgzMjZhNTIxMzMzNTUzOTUyNWMwZTA0NWI2NzZmNTUxNTM2NTQzZDU1NWIwYzAzNWI2NDZmMDcxNzY5NTQzZDUzNWQwZTA0NWE2NDZmNTUxNTMzNTU2ODU3NWYwZDA0NTg2MDZlMDcxNzM2NTE2MDU3NWIwZTAyNTgzNjZlNTYxNDYxNTQ2YzU2NTAwZDA0NTg2MDZmMDcxNzM0NTE2MDU3MGIwYzUyNTg2OTZjMGQxNzYwNTY2YzUyMGQwYTVmNWYzMjZjMGMxNTY5NTI2ODU0NWQwOTAwNWU2NTZhMDIxMDYyNTc2YjU2MGMwZjUyNWI2NzZlMDIxNTYwNTMzYjU3MDkwYzU1NWE2MDZiMDYxMTYzNTc2YjU2MGMwZTU2NTg2NjZkNTYxNjM1NTA2ZTU3NTEwZDUwNTg2OTZkNTAxNDYwNTQzYzU3MGIwYTA0NTkzMTZlMDMxNjY4NTEzOTU2NTkwODA3NWY2NDZkMDcxNDY2NTQ2MTU1NWIwZDAyNWI2ODZmMDYxNjYxNTE2YTU0NTAwZjU1NWIzMjZlMDIxNTM0NTQzYzU2MGMwZjU0NWI2MjZlNTIxNjYzNTQzZDUzNWQwZTUzNWE2NDZlNTIxNDYxNTQ2MTU2MDkwZTU1NTg2MDZlMDcxNzM2NTE2MDU3NWIwZTAyNTg2MTZmMGMxNTY0NTUzOTU2MGUwZTU0NWIzNTZiNTUxMjM0NTA2YjU3NTgwZDU0NWE2NzZlMDMxNTYwNTQ2YjU2MGEwZjU0NTg2MDZlMDcxNzM2NTE2MDU3NWIwZTAyNTgzNjZlNTYxNDYxNTQ2YzU2NTAwZDA0NDk3YzdmNDc0NDI1MTczOTA0MGQxYzVjNDk3MjcxMTY0ZDNmMTcyYzQxNTIxYzUzNTI2NTZjMDc0MDYwNTE2YTAyNTgwODU2NWQ2NTNiMDAxZDYwNWM2YjA1NWYwZDUyMGU2NDY5MTYwOTcyMTQzNzExMWMxYzVjNDk2ODZkMTYwOTcyMGQyYjMzMWE1MTFlMTIwMDJmNWI1MTM1MDcyYzA2MGMxYzVjNDkyNDJmNDE0MDcyNDg3YTA3MDc0YTBlMDQyMzI5MTYxZjcyNDY3NDQxMDU1YjE1MTgzMTNhNTEwNzZhNDYxYjE2MWI0YTA5MDY3MDA5NDM0MDMxMGY3ODRlNDhjZWZiZmJkMmFkYTliNWMxOTRjNWYzZWNjZWZiZmJkMGFkYTliNWMzOTRjNWYzZTZjZWZiZmJjMTY3MTRkNWNkZjRjZDkzZjVhZWU5OWJjZGNkYjkwNWEwZjljOGU0OThhM2Y2ZWJhMGMwYTRhN2EwZjljOGU5OThhMWUxY2RhMGMyYjM5NDcyNDg3YTBlMGQ0YTBlMDQzNDdmMGUwNzM4MTAyYzEzNGExMjQ0MTgyMzMxNDM1NjcyNWU3YTA1MDk1MjE1MGU3MjcxMTY1NDI1MDEyYTFhNGEwNDQ0MDUzZjJmNTk0NDNjNDY3NDQxMGI1ZjEyMGUzNzMyNDY1YzcyNWU3YTBjMGI0ZDBkMWI3MjcxMTY0YzIzMmMzNzEwMWM2YzAzMTgzZjMxNDI0MDcyNWU3YTA1MDk1MjE1MGU3MjcxMTY0YzIzMmMzNzEwMWM2ZDA4MDI3MjY3MTY0MzMxMDgyYjA2NGExMjQ0MDIyMzFjNDE1MTNmMzczZDBmMGQ1ZDEyNDk2YTdmNDA1NzI1MDE3YTRmNGE1ZjBhMDczZjJhN2Q0YjIzMDEzYjE2MWE1YjQ0NTE3MjNiNTU0OTIzMDE3YTRmNGE0YTBhMTgwNjM4NDY1NjM5MGIzNjQxNTIxYzU1NDk3YzdmNDY0MDMzMGIzNjBkMGQ1ZDEyMzgzNTNlNWI0YjM0MTc3YTU5NGEwYjQ0NDc3MjI5NDM0MDMxMGYwNzA2MTA0ZTBmMTkyOTdmMGUwNzYyNTQ2YTU1NDUwNzRiNTg2MDcwMDYxNTdkNTY2YzQxNDQxYzBlMWMzOTM5NmI0OTNmMDczMzQxNTIxYzQ0NDc3MjMwNWI0NzM5MDgzZDNjMGM1ZjEyMGEwZjMyNWE0OTI5NDY2MjQxMWM0YzEzMGU3MjcxMTY0NzNjMGIzYjA4Mzc0YzA5MDQyNDM4NTAwNzZhNDYyYzExMWQ1YjQ0NDc3MjI5NDM0MDMxMGYwNzEzMDk0ZDE1MWMzZjJmNTAwNzZhNDY3YTFl"},{"name":"𝐕𝐎𝐃𝐀𝐂𝐎𝐌 𝟏𝟎𝟎𝐆 ⌬ 𓂃 (1).bdnet","data":"NGYwNzM2MTYzMTA2MDY1YTBhMTIwZjMzNTU0ODM1NDY2MjQxOThhM2Y2ZmVhMGMwYTRhYmEwZjljOGUwOThhM2Y2ZWJhMGMwYTRhN2EwZjljOGVkOThhM2Y2ZTc3MGFkYTliYWRmOTRjNWZjZTZjZWZiZjRkZWFkYTliNWQ2NDRiYWVmYzQxZTk2ZjhkMmRlMTYwOTcyMTQzOTFhMDQ1MTA3MGY3MjY3MTYwNzdjNDYyYjAyMWQ0ZDA3MGMzNTdmMGUwNzY1MDA2YzAxNWEwZDU3NWI2MjNjMDUxMzYwMDY2YzAyNTkwZDU3NTI2MzY4MDMxNTY0NTU2ZDU2NWI1ZDU2MDk2MzY0MDQxMjYxMDY2OTUzNTkwYjUzNTM2NzM4MDc0NjY1NWQ2YzU3NWE1ZjU2MDk2MzZiMDQxNzYxMDI2YzA3NWMwNjU2NTM2MzNiMDcxNTcyNDg3YTBiMDc0ZDEyNDk2YTdmMTYwOTcyMTQzNzExMWMxYzVjNDk3MjcxMTY0MTNmMTAzMDBjMWI0YTQ0NTE3MjdmMTgwNzNkMDEyYjEwMDk1OTAzNDk2YTdmNzc1MDIzMTAzNzBlNDg2YTExMGUzMTM2MTQwODcwMDcyYTA2MDk0YTAzMGY3MDNmNGQxZjcwOGVmMmZmOThhM2ZmZDRhMGMwYWQ5ODcwOTRjNWZhZGZjZWZiZjJlMGFkYTliY2UyOTRjNWZhZDIxYzRhNDkzZDM4NDA0ZDNmMDA3YTU5NGE0ZDE1MDc3MjcxMTY1NjIzMDgyZjEwNGEwNDQ0MGQzMTMxNDc0MDcyNDg3YTEyMWQ1YjE0MTI3MjY3MTY0YjNmMTYzNTAyMDQxYzRhNDkzMzNjNDA0MDM3MGIyYTFhNGEwNDQ0MDQzMzJlNWY1NTNlMGIyYTBlMDk1MjQ0NDc3MjM0NDc2ZDNmMTcyYzMxMGQ0ZDA5MDcyNjM4MTYxZjcyMTAyYTE2MGQxYzRhNDkzOTJlN2M0YTIzMTAwYjBkMDExYzVjNDkzNjNjNTg1NjM1NDY3NDQxMDE0ZDI3MWUyNDMyNjc0MDNjMDEzYjE3NGEwNDQ0MWYyMjI4NTEwNzdjNDYzOTBmMDQ1MTExMjIzZTJlNTE0NjI1MTYzZDQxNTIxYzEyMTkyNTM4MTYwOTcyMTAzNDEwM2U1YjE0MTgzOTMyNWEwNzZhNDY2YjQxNDQxYzBmMTgwMDJmNWI1ZDI5MzQyYTBjMWM1YjA1MWYzNTM5MTYxZjcyMDIzOTBmMWI1YjQ0NDc3MjJmNTE0NjNmMGEzNjA2MGI0YTM1MGUzMzMyNWE0MTIzNDY2MjQxNWQxYzRhNDkyNDJhNTE0NDNiM2IzZDFiMTg1NzE0MTI3MjY3MTYxNzYwNTY2ZTRlNTExMzU0NTI3ZDZjMDYwODYzNTc3YTRmNGE1NjExMDIzNDAyNTg0YTMzMGY3YTU5NGExYzRhNDkzZDMyNTY0YzNjMDEwNzA3MDk0YTA3MzQzZjMzNTg1YzcyNWU3YTE3MWE0YjAzNDk3YzdmNTY0OTNmMDczMzNjMWE1MTA5MWYzNTM5MTYxZjcyMTAyYTE2MGQxYzRhNDkyNDJhNTE0NDNiM2IyODAyMWI0ZDExMDQyMjM5MTYxZjcyNDYyNQ=="},{"name":"𝐕𝐎𝐃𝐀𝐂𝐎𝐌 𝟏𝟎𝟎𝐆 ⌬ 𓂃.bdnet","data":"NGYwNzM2MTYzMTA2MDY1YTBhMTIwZjMzNTU0ODM1NDY2MjQxOThhM2Y2ZmVhMGMwYTRhYmEwZjljOGUwOThhM2Y2ZWJhMGMwYTRhN2EwZjljOGVkOThhM2Y2ZTc3MGFkYTliYWRmOTRjNWZjZTZjZWZiZjRkZWFkYTliNWQ2NDRiYWVmYzQxZTk2ZjhkMmRlMTYwOTcyMTQzOTFhMDQ1MTA3MGY3MjY3MTYwNzdjNDYyYjAyMWQ0ZDA3MGMzNTdmMGUwNzY1MDA2YzAxNWEwZDU3NWI2MjNjMDUxMzYwMDY2YzAyNTkwZDU3NTI2MzY4MDMxNTY0NTU2ZDU2NWI1ZDU2MDk2MzY0MDQxMjYxMDY2OTUzNTkwYjUzNTM2NzM4MDc0NjY1NWQ2YzU3NWE1ZjU2MDk2MzZiMDQxNzYxMDI2YzA3NWMwNjU2NTM2MzNiMDcxNTcyNDg3YTBiMDc0ZDEyNDk2YTdmMTYwOTcyMTQzNzExMWMxYzVjNDk3MjcxMTY0MTNmMTAzMDBjMWI0YTQ0NTE3MjdmMTgwNzNkMDEyYjEwMDk1OTAzNDk2YTdmNzc1MDIzMTAzNzBlNDg2YTExMGUzMTM2MTQwODcwMDcyYTA2MDk0YTAzMGY3MDNmNGQxZjcwOGVmMmZmOThhM2ZmZDRhMGMwYWQ5ODcwOTRjNWZhZGZjZWZiZjJlMGFkYTliY2UyOTRjNWZhZDIxYzRhNDkzZDM4NDA0ZDNmMDA3YTU5NGE0ZDE1MDc3MjcxMTY1NjIzMDgyZjEwNGEwNDQ0MGQzMTMxNDc0MDcyNDg3YTEyMWQ1YjE0MTI3MjY3MTY0YjNmMTYzNTAyMDQxYzRhNDkzMzNjNDA0MDM3MGIyYTFhNGEwNDQ0MDQzMzJlNWY1NTNlMGIyYTBlMDk1MjQ0NDc3MjM0NDc2ZDNmMTcyYzMxMGQ0ZDA5MDcyNjM4MTYxZjcyMTAyYTE2MGQxYzRhNDkzOTJlN2M0YTIzMTAwYjBkMDExYzVjNDkzNjNjNTg1NjM1NDY3NDQxMDE0ZDI3MWUyNDMyNjc0MDNjMDEzYjE3NGEwNDQ0MWYyMjI4NTEwNzdjNDYzOTBmMDQ1MTExMjIzZTJlNTE0NjI1MTYzZDQxNTIxYzEyMTkyNTM4MTYwOTcyMTAzNDEwM2U1YjE0MTgzOTMyNWEwNzZhNDY2YjQxNDQxYzBmMTgwMDJmNWI1ZDI5MzQyYTBjMWM1YjA1MWYzNTM5MTYxZjcyMDIzOTBmMWI1YjQ0NDc3MjJmNTE0NjNmMGEzNjA2MGI0YTM1MGUzMzMyNWE0MTIzNDY2MjQxNWQxYzRhNDkyNDJhNTE0NDNiM2IzZDFiMTg1NzE0MTI3MjY3MTYxNzYwNTY2ZTRlNTExMzU0NTI3ZDZjMDYwODYzNTc3YTRmNGE1NjExMDIzNDAyNTg0YTMzMGY3YTU5NGExYzRhNDkzZDMyNTY0YzNjMDEwNzA3MDk0YTA3MzQzZjMzNTg1YzcyNWU3YTE3MWE0YjAzNDk3YzdmNTY0OTNmMDczMzNjMWE1MTA5MWYzNTM5MTYxZjcyMTAyYTE2MGQxYzRhNDkyNDJhNTE0NDNiM2IyODAyMWI0ZDExMDQyMjM5MTYxZjcyNDYyNQ=="},{"name":"𝐕𝐎𝐃𝐀𝐂𝐎𝐌 𝟏𝟎𝟎𝐆 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 🪐✨.bdnet","data":"NGYwNzM2MTYzMTA2MDY1YTBhMTIwZjMzNTU0ODM1NDY2MjQxOThhM2Y2ZmVhMGMwYTRhYmEwZjljOGUwOThhM2Y2ZWJhMGMwYTRhN2EwZjljOGVkOThhM2Y2ZTc3MGFkYTliYWRmOTRjNWZjZTZjZWZiZjRkZWFkYTliNWQ2NDRhOGZlZjhhODk2ZjZjMGRhYzRiOGMwZTRhOGZlZjhhZDk2ZjZjMGNmYzRiOGMwZTRhOGZlZjhiMTk2ZjZjMGQyMTRkNWNmY2VjODgxZjQ5NjQ0NDc3MjJkNTU1YzNjMGIzOTA3NGEwNDQ0NDk3YzdmNDc0NDI1MTczOTA0MGQxYzVjNDk3MjcxMTY0ZDNmMTcyYzQxNTIxYzM2MWUzYzMxNTE0MTcyNDg3YTEzMDc0YzEyNDk2YTdmMDIxNTYwNTQ3NTUyNTEwNzVmNTI3MjcxMTY0MTNmMTAzMDBjMWI0YTQ0NTE3MjdmMTgwNzNkMDEyYjEwMDk1OTAzNDk2YTdmNzc1MDIzMTAzNzBlNDg2YTExMGUzMTM2MTQwODcwODZmM2Q0NDgwZjU2NWIxNzFmMTQ2YjE1MzA3ODQ4NDg2OTJlMmEwNDBlNzU3NTAwNDQxZTMxMmQ3YjQ2ODlmYmU1MTQ0NzI5NWU3ODg5YzJhMjk2ZjZjOWUyYzRiOGM5ZDk3ODkzZjVhN2QxOWJjZGM0ODRkNWNkZmRlYTkzZjVhN2RjNDk3YzdmNTk0MDI0MGMzNzA3NGEwNDQ0MWUzNDJkMTYwOTcyMTcyYjBmMWY0ZDQ0NTE3MjNiNTU0OTIzMDE3YTRmNGE0ZjEzMGUyMjI0MTYxZjcyMGEzNzExMDU1ZjBhNDk3YzdmNTc0NDI0MDEzZjBjMWE0NzQ0NTE3MjMyNTc1NjI1MDAyODQxNDQxYzBmMTgxODMyNDc1MTAyMDEyYjBjMDQ0ODAzNDk2YTdmNTI0NDNjMTczZDQxNDQxYzBmMTgxODMyNDc1MTAzMGEzMTQxNTIxYzAwMGEzYzJlNTEwNzdjNDYzMTEwMjk0YjEyMDQwMzM4NTg0MDMzMTA3YTU5NGE0YTE0MWUzNTdmMTgwNzMxMDgzNDBjMWY3NzA4MTgzNTNlNDE1NzM1NDY2MjQxMGU1ZjBhMTgzNTdmMTgwNzI0MDgyYjM1MGQ0YzE1MDIzZjMzMTYxZjcyNTc3YTRmNGE1NzE1M2IyMjMyNGM1YzAwMTYzNzE3MGQ1ZDEyMGUzNDdmMGUwNzM2MDUzNDEwMGQxYzRhNDkyMjM4NTc0YTNlMGEzZDAwMWM2ZDAzMDgzZjMzNTA1NjcyNWU3YTUyNTgxYzRhNDkyNDJhNTE0NDNiM2IzZDFiMTg1NzE0MTI3MjY3MTYxNzYwNTY2ZTRlNTkwZTRiNWM3ZDZmMDcwODYxNTQ3YTRmNGE1NjExMDIzNDAyNTg0YTMzMGY3YTU5NGExYzRhNDkzZDMyNTY0YzNjMDEwNzA3MDk0YTA3MzQzZjMzNTg1YzcyNWU3YTE3MWE0YjAzNDk3YzdmNTY0OTNmMDczMzNjMWE1MTA5MWYzNTM5MTYxZjcyMTAyYTE2MGQxYzRhNDkyNDJhNTE0NDNiM2IyODAyMWI0ZDExMDQyMjM5MTYxZjcyNDYyNQ=="}];
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+
+function safeText(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));}
+function countryFor(name){
+  const n=name.toLowerCase();
+  if(n.includes("mtn")||n.includes("vodacom")||n.includes("limpopo")||n.includes("whatsapp")) return "South Africa";
+  return "Other";
+}
+const state={country:"all",query:"",custom:[]};
+
+function allResources(){
+  return embeddedFiles.map((x,i)=>({...x,id:"e"+i,country:countryFor(x.name),embedded:true})).concat(state.custom);
+}
+function render(){
+  const q=state.query.toLowerCase();
+  const list=allResources().filter(x=>
+    (state.country==="all" || x.country===state.country) &&
+    (!q || x.name.toLowerCase().includes(q) || x.country.toLowerCase().includes(q))
+  );
+  $("#resourceGrid").innerHTML=list.map(x=>`
+    <article class="card">
+      <span class="badge">${safeText(x.country)}</span>
+      <h3>${safeText(x.name)}</h3>
+      <small>${x.embedded?"Embedded in this page":"Added in this browser session"}</small>
+      <button class="download" data-id="${safeText(x.id)}">Download</button>
+    </article>`).join("");
+  $("#empty").classList.toggle("show",list.length===0);
+  $$(".download").forEach(b=>b.addEventListener("click",()=>downloadResource(b.dataset.id)));
+  $("#termCount").textContent=String(allResources().length);
+}
+function downloadResource(id){
+  const x=allResources().find(v=>v.id===id);
+  if(!x)return;
+  if(x.embedded){
+    const raw=atob(x.data), bytes=new Uint8Array(raw.length);
+    for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);
+    saveBlob(new Blob([bytes],{type:"application/octet-stream"}),x.name);
+  }else if(x.dataUrl){
+    const a=document.createElement("a");a.href=x.dataUrl;a.download=x.name;document.body.appendChild(a);a.click();a.remove();
+  }
+}
+function saveBlob(blob,name){
+  const u=URL.createObjectURL(blob),a=document.createElement("a");
+  a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(u),1500);
+}
+
+$$(".filter").forEach(btn=>btn.addEventListener("click",()=>{
+  $$(".filter").forEach(x=>x.classList.remove("active"));btn.classList.add("active");
+  state.country=btn.dataset.country;render();
+}));
+$("#search").addEventListener("input",e=>{state.query=e.target.value;render();});
+
+$("#publishFile").addEventListener("click",async()=>{
+  const file=$("#pubFile").files[0],name=$("#pubName").value.trim()||file?.name||"Untitled resource",country=$("#pubCountry").value;
+  if(!file){$("#pubStatus").textContent="Choose a file first.";return}
+  const reader=new FileReader();
+  reader.onload=()=>{state.custom.push({id:"c"+Date.now(),name,country,dataUrl:reader.result,embedded:false});render();$("#pubStatus").textContent="Resource added for this browser session.";$("#pubName").value="";$("#pubFile").value="";};
+  reader.readAsDataURL(file);
+});
+
+const replies=[
+  [/download|baixar/i,"To download a resource, open VPN Resources and press the Download button on a card."],
+  [/country|país|pais/i,"Use the country buttons to filter the resource list."],
+  [/share|upload|file|ficheiro/i,"Use Share Your File to add a configuration file to the current browser session."],
+  [/language|idioma|língua/i,"Use the language selector at the top. English, Português, isiZulu, Français and Español are available."],
+  [/hello|hi|hey|olá|ola/i,"Hey 👊 VPN HACK AI is online. What do you want to find?"],
+];
+$("#aiForm").addEventListener("submit",e=>{
+  e.preventDefault();const input=$("#aiInput"),q=input.value.trim();if(!q)return;
+  addMsg(q,"user");let ans="I can help with downloads, countries, languages, publishing files, and navigating HACK WORLDLAND.";
+  for(const [re,msg] of replies)if(re.test(q)){ans=msg;break}
+  setTimeout(()=>addMsg(ans,"bot"),180);input.value="";
+});
+function addMsg(text,type){const d=document.createElement("div");d.className="msg "+type;d.textContent=text;$("#aiWindow").appendChild(d);$("#aiWindow").scrollTop=999999}
+
+const translations={
+  en:{kicker:"VPN RESOURCES • WORLDWIDE",hero:"A clean hub for VPN configuration resources, community uploads and a built-in VPN HACK AI helper.",browse:"Browse resources",publishBtn:"Share your file",resources:"VPN Resources",resourceSub:"Choose a country or search the resource list.",publish:"Share Your File",publishSub:"Add a file to the page for this browser session."},
+  pt:{kicker:"RECURSOS VPN • MUNDIAL",hero:"Um hub para recursos de configuração VPN, uploads da comunidade e um assistente VPN HACK AI integrado.",browse:"Ver recursos",publishBtn:"Partilhar ficheiro",resources:"Recursos VPN",resourceSub:"Escolhe um país ou pesquisa a lista.",publish:"Partilhar o teu ficheiro",publishSub:"Adiciona um ficheiro nesta sessão do navegador."},
+  zu:{kicker:"IZINSIZA ZE-VPN • UMHLABA WONKE",hero:"Indawo yezinsiza ze-VPN kanye nomsizi we-VPN HACK AI.",browse:"Buka izinsiza",publishBtn:"Yabelana ngefayela",resources:"Izinsiza ze-VPN",resourceSub:"Khetha izwe noma useshe uhlu.",publish:"Yabelana ngefayela lakho",publishSub:"Engeza ifayela kule seshini yesiphequluli."},
+  fr:{kicker:"RESSOURCES VPN • MONDIAL",hero:"Un hub pour les ressources VPN et un assistant VPN HACK AI intégré.",browse:"Voir les ressources",publishBtn:"Partager un fichier",resources:"Ressources VPN",resourceSub:"Choisissez un pays ou recherchez dans la liste.",publish:"Partager votre fichier",publishSub:"Ajoutez un fichier à cette session du navigateur."},
+  es:{kicker:"RECURSOS VPN • MUNDIAL",hero:"Un centro de recursos VPN con un asistente VPN HACK AI integrado.",browse:"Ver recursos",publishBtn:"Compartir archivo",resources:"Recursos VPN",resourceSub:"Elige un país o busca en la lista.",publish:"Compartir tu archivo",publishSub:"Añade un archivo a esta sesión del navegador."}
+};
+$("#language").addEventListener("change",e=>{
+  const t=translations[e.target.value]||translations.en;
+  $$("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(t[k])el.textContent=t[k]});
+});
+
+render();
+setTimeout(()=>$("#intro").classList.add("hide"),1900);
+</script>
+</body>
+</html>
