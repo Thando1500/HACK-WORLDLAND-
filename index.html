@@ -49,7 +49,7 @@ footer{border-top:1px solid var(--line);padding:25px 18px;color:#6f8176;text-ali
 
 .nettools{display:grid;grid-template-columns:1fr 1fr;gap:16px}.nettool{background:linear-gradient(145deg,#0b140e,#07100a);border:1px solid var(--line);border-radius:18px;padding:20px}.nettool h3{margin-top:0}.nettool p{color:var(--muted);line-height:1.5}.toolrow{display:flex;gap:8px;flex-wrap:wrap}.toolrow input{flex:1;min-width:180px}.toolbtn{background:var(--green);color:#001b0a;border:0;border-radius:10px;padding:11px 14px;font-weight:900;cursor:pointer}.resultbox{margin-top:13px;border:1px solid var(--line);border-radius:12px;padding:14px;background:#050906;min-height:54px;color:var(--green2)}.metric{font-size:30px;font-weight:900;color:var(--green)}.submetric{color:var(--muted);font-size:12px}.status-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#777;margin-right:7px}.status-online{background:#00ff66;box-shadow:0 0 10px #00ff66}.status-offline{background:#ff6b6b}.status-checking{background:#ffd166;box-shadow:0 0 10px #ffd166}@media(max-width:850px){.nettools{grid-template-columns:1fr}}
 </style>
-<style>.download{padding:8px 13px !important;font-size:12px !important;min-width:92px !important;width:auto !important;border-radius:8px !important}</style></head>
+<style>.download{padding:8px 13px !important;font-size:12px !important;min-width:92px !important;width:auto !important;border-radius:8px !important}.vpn-app{display:block;color:var(--green);font-weight:700;margin:5px 0}</style></head>
 <body>
 <div id="intro">
   <div class="matrix"></div>
@@ -200,7 +200,7 @@ function countryFor(name){
 }
 const state={country:"all",query:"",custom:[]};
 function allResources(){
-  return embeddedFiles.map((x,i)=>({...x,id:"e"+i,country:countryFor(x.name),embedded:true})).concat(state.custom);
+  return embeddedFiles.map((x,i)=>({...x,id:"e"+i,country:countryFor(x.name),app:detectVpnApp(x.name),embedded:true})).concat(state.custom);
 }
 function render(){
   const q=state.query.toLowerCase();
@@ -212,6 +212,7 @@ function render(){
     return `<article class="card" data-resource-id="${safeText(x.id)}">
       <span class="badge">${safeText(x.country)}</span>
       <h3>${safeText(x.name)}</h3>
+      ${`<small class="vpn-app">📱 ${safeText(x.app||"Other")}</small>`}
       <small>${x.embedded?tr("embedded"):tr("session")}</small>
       <button class="download" data-id="${safeText(x.id)}">${tr("download")}</button>
     </article>`;
@@ -243,11 +244,39 @@ $$(".filter").forEach(btn=>btn.addEventListener("click",()=>{
 }));
 $("#search").addEventListener("input",e=>{state.query=e.target.value;render();});
 
+function detectVpnApp(filename){
+  const name=String(filename||"").toLowerCase().trim();
+  const ext=(name.match(/\.([a-z0-9]+)$/i)||[])[1]||"";
+  const map={
+    bdnet:"BD NET VPN",
+    hc:"HTTP Custom",
+    hat:"HA Tunnel",
+    ehi:"HTTP Injector",
+    ehi2:"HTTP Injector",
+    dark:"Dark Tunnel",
+    omanova:"OMANOVA VPN",
+    ovpn:"OpenVPN",
+    npv4:"NapsternetV",
+    npv:"NapsternetV",
+    tls:"TLS Tunnel",
+    htv:"HA Tunnel",
+    hcf:"HTTP Custom"
+  };
+  if(map[ext]) return map[ext];
+  if(/\bbd[._ -]?net\b/i.test(name)) return "BD NET VPN";
+  if(/\bdark[._ -]?tunnel\b/i.test(name)) return "Dark Tunnel";
+  if(/\bomanova\b/i.test(name)) return "OMANOVA VPN";
+  if(/\bhttp[._ -]?injector\b/i.test(name)) return "HTTP Injector";
+  if(/\bhttp[._ -]?custom\b/i.test(name)) return "HTTP Custom";
+  if(/\bha[._ -]?tunnel\b/i.test(name)) return "HA Tunnel";
+  return "Other";
+}
+
 $("#publishFile").addEventListener("click",async()=>{
   const file=$("#pubFile").files[0],name=$("#pubName").value.trim()||file?.name||"Untitled resource",country=$("#pubCountry").value;
   if(!file){$("#pubStatus").textContent="Choose a file first.";return}
   const reader=new FileReader();
-  reader.onload=()=>{state.custom.push({id:"c"+Date.now(),name,country,dataUrl:reader.result,embedded:false});render();$("#pubStatus").textContent="Resource added for this browser session.";$("#pubName").value="";$("#pubFile").value="";};
+  reader.onload=()=>{const app=detectVpnApp(file.name);state.custom.push({id:"c"+Date.now(),name,country,app,dataUrl:reader.result,embedded:false});render();$("#pubStatus").textContent="Resource added for this browser session.";$("#pubName").value="";$("#pubFile").value="";};
   reader.readAsDataURL(file);
 });
 
